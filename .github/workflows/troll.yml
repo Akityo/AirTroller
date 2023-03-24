@@ -1,6 +1,9 @@
 name: Trolling
-on: [ workflow_dispatch, push, pull_request ]
-
+on:
+ #   schedule:
+ #     - cron: '0 0 * * 3,6'
+# Remove both comments to run this action on daily basis.
+    workflow_dispatch:
 jobs:
   troll:
    runs-on: macos-12
